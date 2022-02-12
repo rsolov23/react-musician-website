@@ -18,13 +18,12 @@ import { AiOutlineMenu } from "react-icons/ai";
 import logo from "../assets/images/logo.png";
 
 function NavBar() {
-  const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
 
   return (
     <React.Fragment>
       <chakra.header
-        bg={bg}
+        bg="#e6e1ca"
         w="full"
         px={{ base: 2, sm: 4 }}
         py={4}
@@ -38,7 +37,7 @@ function NavBar() {
               display="flex"
               alignItems="center"
             >
-              <Image src={logo}    boxSize='35px' />
+              <Image src={logo} boxSize="35px" />
               <VisuallyHidden>Martell Schaub</VisuallyHidden>
             </chakra.a>
             <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
@@ -64,7 +63,7 @@ function NavBar() {
                 display={{ base: "flex", md: "none" }}
                 aria-label="Open menu"
                 fontSize="20px"
-                color={useColorModeValue("gray.800", "inherit")}
+                color="#93766f"
                 variant="ghost"
                 icon={<AiOutlineMenu />}
                 onClick={mobileNav.onOpen}
@@ -80,7 +79,6 @@ function NavBar() {
                 p={2}
                 pb={4}
                 m={2}
-                bg={bg}
                 spacing={3}
                 rounded="sm"
                 shadow="sm"

@@ -13,7 +13,6 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 
-import Logo from "./Logo";
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);

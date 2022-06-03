@@ -7,6 +7,8 @@ import Appointments from "./pages/Appointment";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Services from "./pages/Services";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <Router>
@@ -19,6 +21,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/services" element={<Services />} />
       </Routes>
+      {/* <Footer /> */}
     </Router>
   );
 }

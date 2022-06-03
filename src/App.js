@@ -1,20 +1,22 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import About from "./pages/About";
 import Appointments from "./pages/Appointment";
 import Home from "./pages/Home";
-import More from "./pages/More";
+import Blog from "./pages/Blog";
 import Services from "./pages/Services";
 function App() {
   return (
     <Router>
+      <Header />
       <Navigation />
       <Routes>
-        <Route path="/" element={<About />} />
+        <Route path="/" element={<Home />} />
         <Route path="/appointments" element={<Appointments />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/more" element={<More />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/services" element={<Services />} />
       </Routes>
     </Router>

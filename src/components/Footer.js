@@ -2,12 +2,25 @@ import React from "react";
 import { chakra, Flex, Icon, useColorModeValue } from "@chakra-ui/react";
 
 export default function App() {
+  const style = {
+    // backgroundColor: "#F8F8F8",
+    borderTop: "1px solid #E7E7E7",
+    textAlign: "center",
+    padding: "20px",
+    position: "fixed",
+    left: "0",
+    bottom: "0",
+    height: "60px",
+    width: "100%",
+  };
   return (
     <Flex
+      style={style}
       w="full"
-      bg={useColorModeValue("#F9FAFB", "gray.600")}
+      bg="brand.300"
       alignItems="center"
       justifyContent="center"
+      position="absolute"
     >
       <Flex
         w="full"
@@ -17,9 +30,9 @@ export default function App() {
         justify="space-between"
         px="6"
         py="4"
-        bg="white"
+        bg="brand.300"
         _dark={{
-          bg: "gray.800",
+          bg: "brand.400",
         }}
       >
         <chakra.a
@@ -37,7 +50,7 @@ export default function App() {
             color: "gray.700",
           }}
         >
-       Martell Schaub
+          Martell Schaub
         </chakra.a>
 
         <chakra.p

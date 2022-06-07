@@ -22,7 +22,13 @@ const Navigation = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <NavBarContainer {...props}>
+    <NavBarContainer
+      {...props}
+      bg="brand.300"
+      _dark={{
+        bg: "brand.400",
+      }}
+    >
       <Logo
         w="100px"
         // color={["white", "white", "primary.500", "primary.500"]}
@@ -79,6 +85,10 @@ const MenuLinks = ({ isOpen }) => {
   const [display, changeDisplay] = useState("");
   return (
     <Box
+      bg="brand.300"
+      _dark={{
+        bg: "brand.400",
+      }}
       display={{ base: isOpen ? "block" : "none", md: "block" }}
       flexBasis={{ base: "100%", md: "auto" }}
     >
@@ -126,7 +136,7 @@ const NavBarContainer = ({ children, ...props }) => {
       justify="space-between"
       wrap="wrap"
       w="100%"
-      mb={8}
+      // mb={8}
       p={8}
       // bg={["primary.500", "primary.500", "transparent", "transparent"]}
       // color={["white", "white", "primary.700", "primary.700"]}

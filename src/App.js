@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import About from "./pages/About";
 import Appointments from "./pages/Appointment";
@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
-      <Header />
+      {/* <Header /> */}
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/services" element={<Services />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }

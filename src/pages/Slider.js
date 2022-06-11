@@ -94,7 +94,7 @@ export default function Slider() {
               shadow="md"
               flex="none"
               borderRadius="10"
-              bg={useColorModeValue("blue.200", "blue.600")}
+              bg="brand.500"
             >
               <Text
                 color="white"

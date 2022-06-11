@@ -14,6 +14,8 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 
+
+
 import Logo from "./Logo";
 
 const Navigation = (props) => {
@@ -103,7 +105,10 @@ const MenuLinks = ({ isOpen }) => {
         <MenuItem to="/about">About</MenuItem>
         <MenuItem to="/services">Services</MenuItem>
         <MenuItem to="/appointments">Appointments</MenuItem>
-        <MenuItem to="/blog">Blog</MenuItem>
+        <MenuItem to="/blog">
+          Blog
+          <MenuItem className=""></MenuItem>
+        </MenuItem>
         <MenuItem to="/signup" isLast>
           <Button
             size="sm"

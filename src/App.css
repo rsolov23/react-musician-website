@@ -1,3 +1,8 @@
 .name {
   font-family: 'Water Brush', cursive;
 }
+.bg {  color: #fff;
+  background: -webkit-linear-gradient(110deg, #93977a 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #e0b48e 70%, #c9917d 70%);
+  background: -o-linear-gradient(110deg, #93977a 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #e0b48e 70%, #c9917d 70%);
+  background: -moz-linear-gradient(110deg, #93977a 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #e0b48e 70%, #c9917d 70%);
+  background: linear-gradient(110deg, #93977a 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #e0b48e 70%, #c9917d 70%);}

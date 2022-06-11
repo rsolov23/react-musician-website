@@ -9,6 +9,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { Icon } from "@iconify/react";
+import "../App.css";
 export default function Slider() {
   const arrowStyles = {
     cursor: "pointer",
@@ -78,11 +79,11 @@ export default function Slider() {
   return (
     <Flex
       w="full"
-      bg={useColorModeValue("gray.200", "gray.600")}
+      // bg={useColorModeValue("gray.200", "gray.600")}
       p={20}
       alignItems="center"
       justifyContent="center"
-      borderRadius="15"
+      className="bg"
     >
       <Flex w="full" pos="relative" overflow="hidden">
         <Flex h="300px" w="full" {...carouselStyle}>
@@ -92,7 +93,8 @@ export default function Slider() {
               boxSize="full"
               shadow="md"
               flex="none"
-              bg={useColorModeValue("blue.200", "blue.600")}
+              borderRadius="10"
+              bg="brand.500"
             >
               <Text
                 color="white"

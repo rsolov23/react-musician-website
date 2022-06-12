@@ -32,14 +32,14 @@ export default function Home() {
                   position: "absolute",
                   bottom: 1,
                   left: 0,
-                  bg: "blue.400",
+                  bg: "brand.600",
                   zIndex: -1,
                 }}
               >
                 Martell Schaub
               </Text>
               <br />{" "}
-              <Text color={"blue.400"} as={"span"}>
+              <Text color={"brand.600"} as={"span"}>
                 Lorem
               </Text>{" "}
             </Heading>
@@ -53,15 +53,24 @@ export default function Home() {
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
               <Button
                 rounded={"full"}
-                bg={"blue.400"}
+                bg={"brand.600"}
                 color={"white"}
                 _hover={{
-                  bg: "blue.500",
+                  bg: "brand.700",
                 }}
               >
                 Lorem
               </Button>
-              <Button rounded={"full"}>Lorem</Button>
+              <Button
+                rounded={"full"}
+                bg={"brand.600"}
+                color={"white"}
+                _hover={{
+                  bg: "brand.700",
+                }}
+              >
+                Lorem
+              </Button>
             </Stack>
           </Stack>
         </Flex>

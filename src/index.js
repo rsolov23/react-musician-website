@@ -12,8 +12,8 @@ const theme = extendTheme({
       300: "#e6d8cf", //light pink/white
       400: "#937067", //drk beige
       500: "#e6d8cf",
-      600: "",
-      700: "",
+      600: "#937067",
+      700: "#bf944c",
       800: "",
       900: "",
     },

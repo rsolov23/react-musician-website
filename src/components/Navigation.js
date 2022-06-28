@@ -7,11 +7,9 @@ import {
   Text,
   Button,
   Stack,
-  HStack,
-  Center,
   useColorMode,
   Switch,
-  IconButton,
+  
 } from "@chakra-ui/react";
 
 

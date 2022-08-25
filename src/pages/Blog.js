@@ -7,7 +7,7 @@ import {
   useColorModeValue,
   Link,
 } from "@chakra-ui/react";
-import { blogCards } from "../assets/data";
+import { blogCards } from "../assets/data/data";
 
 function Blog() {
   return (

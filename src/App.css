@@ -6,3 +6,26 @@
   background: -o-linear-gradient(110deg, #93977a 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #e0b48e 70%, #c9917d 70%);
   background: -moz-linear-gradient(110deg, #93977a 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #e0b48e 70%, #c9917d 70%);
   background: linear-gradient(110deg, #93977a 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #e0b48e 70%, #c9917d 70%);}
+
+  /* preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #937067;
+  background-image: url(../src/assets/images/pre.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#preloader-none {
+  opacity: 0;
+}
+
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
